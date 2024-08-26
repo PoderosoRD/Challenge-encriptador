@@ -35,7 +35,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 50%;
-    padding: 10% 1% 0% 1%;
+    padding: 8% 1% 0% 1%;
 
 }
 
@@ -95,8 +95,8 @@ body {
 .articulo__2 {
     /* width: 25rem;
     height: 59rem;     En 1440x1024 estas proporciones funcionan*/
-    width: 18rem;
-    height: 40rem;
+    width: 16rem;
+    height: 31rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,7 +126,7 @@ body {
 
 .imagen__muñeco {
         display: block;
-       width: 16rem;  /* En 1440x1024 este width no es necesario */
+       width: 13rem;  /* En 1440x1024 este width no es necesario */
     margin: 5%;
 }
 
@@ -161,7 +161,7 @@ body {
 
 .copiar__button {
     padding: 1.5rem;
-    width: 20rem;
+    width: 13rem;
     margin: 6%;
     text-align: center;
     font-family: var(--fuente);
