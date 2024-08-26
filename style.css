@@ -93,8 +93,10 @@ body {
 }
 
 .articulo__2 {
-    width: 25rem;
-    height: 59rem;
+    /* width: 25rem;
+    height: 59rem;     En 1440x1024 estas proporciones funcionan*/
+    width: 18rem;
+    height: 40rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -124,6 +126,7 @@ body {
 
 .imagen__muñeco {
         display: block;
+       width: 16rem;  /* En 1440x1024 este width no es necesario */
     margin: 5%;
 }
 
