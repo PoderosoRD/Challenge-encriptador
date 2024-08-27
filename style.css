@@ -92,9 +92,7 @@ body {
     background-color: var(--color-botones);
 }
 
-.articulo__2 {
-    /* width: 25rem;
-    height: 59rem;     En 1440x1024 estas proporciones funcionan*/
+.articulo__2 {   
     width: 16rem;
     height: 31rem;
     display: flex;
@@ -107,7 +105,7 @@ body {
 }
 
 .textArea__2 {
-        display: none;
+    display: none;
     font-family: var(--fuente);
     font-size: 2rem;
     width: 80%;
@@ -126,13 +124,13 @@ body {
 
 .imagen__muñeco {
         display: block;
-       width: 13rem;  /* En 1440x1024 este width no es necesario */
+       width: 13rem; 
     margin: 5%;
 }
 
 
 .titulo__articulo__2 {
-        display: block;
+    display: block;
     color: #343A40;
     font-family: var(--fuente);
     font-weight: 700;
@@ -143,7 +141,7 @@ body {
 }
 
 .parrafo__articulo__2 {
-        display: block;
+    display: block;
     font-family: var(--fuente);
     font-size: 1.5rem;
     padding-left: 5%;
@@ -177,13 +175,22 @@ body {
 }
 
 .footer {
-background-color:var(--color-fondo-resultado);
-padding: 0.50rem;
-text-align: center;
-font-family: var(--fuente);
-width: 100%;
-color: var(--color-texto);
-align-content: end;
+    background-color:var(--color-fondo-resultado);
+    padding: 0.50rem;
+    text-align: center;
+    font-family: var(--fuente);
+    width: 100%;
+    color: var(--color-texto);
+    align-content: end;
+    position: fixed;
+    bottom: 0;
+}
+
+@media (max-height: 950px) {
+    .footer {
+        position: static;
+        bottom: 0;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -191,6 +198,11 @@ align-content: end;
         flex-direction: column;
         justify-content: space-between;
     }
+
+    /* .footer {
+        position: static;
+        bottom: 0;
+    } */
 
     .articulo__1 {
         width: 100%;
@@ -200,17 +212,18 @@ align-content: end;
     .titulo__articulo__2 {
         margin-top: 10%
     }
-
-    .articulo__2 {
-        height: auto;
-    }
-
+ 
     .imagen__muñeco {   
         display: none;
     }
 
+    .textArea__2 {
+        height: 10rem;
+    }
+
     .articulo__2 {
         width: 100%;
+        height: auto;
         margin-top: 5%;
     }
 }
@@ -229,7 +242,6 @@ align-content: end;
     .principal__button {
         width: auto;
     }
-
 }
     
 
